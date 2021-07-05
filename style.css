@@ -1,0 +1,108 @@
+.container{
+    margin-left: 450px;
+    margin-top:30px;
+    }
+    h13{
+        color:grey;
+    }
+    .class2{
+        text-align:center;
+        margin-top: 50px;
+        width:600px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    #top{
+        color:red;
+        text-align:center;
+    }
+    h3{
+        text-align:center;
+    }
+    .class1{
+        background-color:red;
+        color:white;
+        text-align:center;
+        margin: auto;
+        width:150px;
+        height:50px;
+        padding-top: 10px;
+    }
+    .wrapper{
+        width: 1000px;
+        height:600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .g1{
+        grid-area: a;
+        width:400px;
+        height:150px;
+    }
+    .img1{
+        float:left;
+        margin-right:10px;
+        margin-bottom: 100px;
+    }
+    .g2{
+        grid-area:b;
+        width:400px;
+        height:150px;
+    }
+    .g3{
+        grid-area:c;
+        width:400px;
+        height:150px;
+    }
+    .g4{
+        grid-area:d;
+        width:400px;
+        height:150px;
+    }
+    .g5{
+        grid-area:e;
+        width:400px;
+        height:150px;
+    }
+    .g6{
+        grid-area:f;
+        width:400px;
+        height:150px;
+    }
+
+    @media only screen and (max-width:600px) {
+        .wrapper{
+            margin-top:20px;
+            display:grid;
+            gap:10px;
+            display:grid;
+            grid-template:"a"
+                          "b"
+                          "c"
+                          "d"
+                          "e"
+                          "f"
+        }
+    }
+
+    @media only screen and (min-width:768px){
+        .wrapper{
+            margin-top:20px;
+            display:grid;
+            gap:10px;
+            display:grid;
+            grid-template: "a b"
+                           "c d"
+                           "e f";
+        }
+    }
+
+    @media only screen and (min-width:992px){
+    .wrapper{
+        margin-top:20px;
+        display:grid;
+        gap:10px;
+        grid-template:"a b c"
+                      "d e f";
+    }
+}
